@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: white; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.add-recipe {
+  display: flex;
+  flex: 1;
+  width: 60vw;
+  margin: 20px auto;
+  padding: 10px; }
+
+.add-button {
+  width: 75px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  font-size: 14px;
+  height: 30px; }
+
+.recipe-wrapper {
+  background-color: #eee;
+  width: 60vw;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex: 1; }
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px; }
+
+.recipe-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc; }
+
+.recipe-title {
+  background-color: #ff3030;
+  display: flex;
+  flex: 1;
+  border-radius: 10px 10px 0 0;
+  padding: 0 10px; }
+  .recipe-title:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .recipe-title h2 {
+    color: #770000;
+    margin-top: 10px; }
+
+.recipe-buttons {
+  display: flex;
+  flex: 1;
+  margin: 5px; }
+  .recipe-buttons button {
+    min-width: 75px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; }
+    .recipe-buttons button:hover {
+      background-color: #eee; }
+  .recipe-buttons .delete-button {
+    color: white;
+    background-color: red; }
+
+.recipe-ingredients {
+  margin: 10px;
+  transition: all 0.5s;
+  max-height: 350px;
+  overflow: hidden; }
+
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 15px auto 25px; }
+
+.ingredient-item {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  width: 100%; }

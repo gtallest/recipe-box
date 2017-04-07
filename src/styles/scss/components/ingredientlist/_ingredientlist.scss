@@ -1,0 +1,19 @@
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 15px auto 25px;
+}
+
+
+.ingredient-item {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
